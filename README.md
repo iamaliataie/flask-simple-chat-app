@@ -1,10 +1,10 @@
 Python/Flask and flask-socketio simple chat application
 
 # Installation
-clone repository or download the zip file
-unzip the zip file any path you want
-open terminal on Mac or CMD on Windows
-go to the project path
+clone repository or download the zip file  
+unzip the zip file any path you want  
+open terminal on Mac or CMD on Windows  
+go to the project path 
 
 # run below commands on Mac
 ```bash
