@@ -1,0 +1,87 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Homepage styes */
+.home-wrapper, .home-wrapper form{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.name-box {
+    width: 100%;
+    padding: 10px;
+}
+
+.name-box input {
+    width: 100%;
+    padding: 10px;
+}
+
+.join{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+.join input{
+    width: 75%;
+    padding: 10px;
+}
+.btn-create{
+    width: 100%;
+    padding: 10px;
+}
+
+/* Room page styles */
+.room-box{
+    background-color: rgb(157, 157, 157);
+    width: 60% !important;
+    padding: 10px;
+    border-radius: 10px;
+}
+.room-box h1{
+    text-align: center;
+}
+.room-box .messages-box{
+    margin-bottom: 20px;
+}
+.room-box .messages-box .message{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+.room-box .join{
+    display: flex;
+    gap: 10px;
+
+}
+.room-box .join input{
+    width: 100%;
+}
+
+@media screen and (max-width:500px) {
+    .home-wrapper form {
+        width: 90%;
+    }
+    .room-box {
+        width: 90% !important;
+    }
+}
