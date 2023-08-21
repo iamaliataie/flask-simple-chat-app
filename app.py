@@ -60,7 +60,6 @@ def message(data):
     if room not in rooms:
         return
     content = {"name": name, "message": data['data'], 'date': datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
-
     send(content, to=room)
     rooms[room]['messages'].append(content)
 
