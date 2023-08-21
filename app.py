@@ -28,7 +28,6 @@ def home():
         code = request.form.get('room')
         join = request.form.get('join', False)
         create = request.form.get('create', False)
-        
         if not name:
             return render_template('home.html', error='provide a name.')
         
