@@ -73,7 +73,6 @@ def connect(auth):
     if room not in rooms:
         leave_room(room)
         return
-    
     join_room(room)
     send({"name": name, "message": "has entered the room", 'date': datetime.now().strftime('%Y-%m-%d %H:%M:%S')}, to=room)
     rooms[room]['members'] += 1
