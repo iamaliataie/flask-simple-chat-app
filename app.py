@@ -32,7 +32,6 @@ def home():
             return render_template('home.html', error='provide a name.')
         if join != False and not code:
             return render_template('home.html', error='provide a room code.')
-        
         room = code
         if create != False:
             room = generate_unique_room(4)
