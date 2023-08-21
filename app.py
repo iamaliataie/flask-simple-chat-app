@@ -30,7 +30,6 @@ def home():
         create = request.form.get('create', False)
         if not name:
             return render_template('home.html', error='provide a name.')
-        
         if join != False and not code:
             return render_template('home.html', error='provide a room code.')
         
