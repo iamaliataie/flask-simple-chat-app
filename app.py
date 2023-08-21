@@ -39,11 +39,9 @@ def home():
             print(rooms)
         elif room not in rooms:
             return render_template('home.html', error='room does not exist')
-        
         session['name'] = name
         session['room'] = room
         return redirect(url_for('room'))
-        
     return render_template('home.html')
 
 
