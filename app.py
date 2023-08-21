@@ -87,7 +87,6 @@ def disconnect():
         rooms[room]['members'] -= 1
         if rooms[room]['members'] <= 0:
             del rooms[room]
-            
     send({"name": name, "message": "has left the room", 'date': datetime.now().strftime('%Y-%m-%d %H:%M:%S')}, to=room)
 
 if __name__ == '__main__':
